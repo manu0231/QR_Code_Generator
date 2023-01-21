@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    
+    <link rel="stylesheet" href="./assets/index-24492999.css">
+  </head>
+  <body class="bg-indigo-500 flex justify-center items-center h-screen">
+        <div class="wrapper bg-white max-w-md h-[196px] px-5 py-3 rounded-md  ease-in duration-200">
+            <header >
+              <h1 class="text-3xl">QR Code Generator</h1>
+              <p class="text-lg text-gray-500 mt-2">Paste a url or enter text to create QR code</p>
+            </header>
+            <div class="form">
+              <input id="code_input" class="mt-2 w-full px-3 py-2 rounded-md border 
+              focus:z-10
+              focus:outline-none focus:outline-indigo-500" type="text" name="" id="" placeholder="Enter text or url">
+              <button class="mt-2 w-full px-3 py-2 outline-none bg-indigo-500 rounded-md text-white" id="submit">Generate QR Code</button>
+            </div>
+            <div id="qrcode" class="pointer-events-none mt-4 border-2 border-gray-500 flex justify-center items-center py-5 opacity-0 ">
+              <img  alt="">
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
